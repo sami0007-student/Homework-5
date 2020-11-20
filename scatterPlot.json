@@ -1,0 +1,644 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "width": "container",
+    "height": 600,
+    "data": {
+        "values": [
+            {
+                "state": "Alabama",
+                "2016_pop": "4,863,300",
+                "2016_votes": 2047802,
+                "2016_density": 41.7,
+                "2020_pop": 4908620,
+                "2020_votes": "2,277,632",
+                "2020_density": 46.4,
+                "winner": 0,
+                "electoral": 9
+            },
+            {
+                "state": "Alaska",
+                "2016_pop": "741,894",
+                "2016_votes": 279841,
+                "2016_density": 38.1,
+                "2020_pop": 734002,
+                "2020_votes": "336,031",
+                "2020_density": 45.8,
+                "winner": 0,
+                "electoral": 3
+            },
+            {
+                "state": "Arizona",
+                "2016_pop": "6,931,071",
+                "2016_votes": 2413568,
+                "2016_density": 32.7,
+                "2020_pop": 7378490,
+                "2020_votes": "3,333,829",
+                "2020_density": 45.2,
+                "winner": 100,
+                "electoral": 11
+            },
+            {
+                "state": "Arkansas",
+                "2016_pop": "2,988,248",
+                "2016_votes": 1065366,
+                "2016_density": 35.1,
+                "2020_pop": 3039000,
+                "2020_votes": "1,182,936",
+                "2020_density": 38.9,
+                "winner": 0,
+                "electoral": 6
+            },
+            {
+                "state": "California",
+                "2016_pop": "39,250,017",
+                "2016_votes": 13237598,
+                "2016_density": 33.1,
+                "2020_pop": 39937500,
+                "2020_votes": "16,834,046",
+                "2020_density": 42.2,
+                "winner": 100,
+                "electoral": 55
+            },
+            {
+                "state": "Colorado",
+                "2016_pop": "5,540,545",
+                "2016_votes": 2541354,
+                "2016_density": 43.5,
+                "2020_pop": 5845530,
+                "2020_votes": "3,168,123",
+                "2020_density": 54.2,
+                "winner": 100,
+                "electoral": 9
+            },
+            {
+                "state": "Connecticut",
+                "2016_pop": "3,576,452",
+                "2016_votes": 1570787,
+                "2016_density": 44.1,
+                "2020_pop": 3563080,
+                "2020_votes": "1,795,360",
+                "2020_density": 50.4,
+                "winner": 100,
+                "electoral": 7
+            },
+            {
+                "state": "Delaware",
+                "2016_pop": "952,065",
+                "2016_votes": 420730,
+                "2016_density": 42.8,
+                "2020_pop": 982895,
+                "2020_votes": "496,871",
+                "2020_density": 50.6,
+                "winner": 100,
+                "electoral": 3
+            },
+            {
+                "state": "District of Columbia",
+                "2016_pop": "681,170",
+                "2016_votes": 295553,
+                "2016_density": 41.0,
+                "2020_pop": 720687,
+                "2020_votes": "325,437",
+                "2020_density": 45.2,
+                "winner": 100,
+                "electoral": 3
+            },
+            {
+                "state": "Florida",
+                "2016_pop": "20,612,439",
+                "2016_votes": 9122861,
+                "2016_density": 41.5,
+                "2020_pop": 21993000,
+                "2020_votes": "10,965,776",
+                "2020_density": 49.9,
+                "winner": 0,
+                "electoral": 29
+            },
+            {
+                "state": "Georgia",
+                "2016_pop": "10,310,371",
+                "2016_votes": 3967067,
+                "2016_density": 36.9,
+                "2020_pop": 10736100,
+                "2020_votes": "4,930,812",
+                "2020_density": 45.9,
+                "winner": 100,
+                "electoral": 16
+            },
+            {
+                "state": "Hawaii",
+                "2016_pop": "1,428,557",
+                "2016_votes": 395738,
+                "2016_density": 28.0,
+                "2020_pop": 1412690,
+                "2020_votes": "562,870",
+                "2020_density": 39.8,
+                "winner": 100,
+                "electoral": 4
+            },
+            {
+                "state": "Idaho",
+                "2016_pop": "1,683,140",
+                "2016_votes": 598820,
+                "2016_density": 32.8,
+                "2020_pop": 1826160,
+                "2020_votes": "841,159",
+                "2020_density": 46.1,
+                "winner": 0,
+                "electoral": 4
+            },
+            {
+                "state": "Illinois",
+                "2016_pop": "12,801,539",
+                "2016_votes": 5236744,
+                "2016_density": 41.4,
+                "2020_pop": 12659700,
+                "2020_votes": "5,831,529",
+                "2020_density": 46.1,
+                "winner": 100,
+                "electoral": 20
+            },
+            {
+                "state": "Indiana",
+                "2016_pop": "6,633,053",
+                "2016_votes": 2590412,
+                "2016_density": 38.4,
+                "2020_pop": 6745350,
+                "2020_votes": "2,971,220",
+                "2020_density": 44.0,
+                "winner": 0,
+                "electoral": 11
+            },
+            {
+                "state": "Iowa",
+                "2016_pop": "3,134,693",
+                "2016_votes": 1454652,
+                "2016_density": 45.7,
+                "2020_pop": 3179850,
+                "2020_votes": "1,656,348",
+                "2020_density": 52.1,
+                "winner": 0,
+                "electoral": 6
+            },
+            {
+                "state": "Kansas",
+                "2016_pop": "2,907,289",
+                "2016_votes": 1098023,
+                "2016_density": 37.7,
+                "2020_pop": 2910360,
+                "2020_votes": "1,304,569",
+                "2020_density": 44.8,
+                "winner": 0,
+                "electoral": 6
+            },
+            {
+                "state": "Kentucky",
+                "2016_pop": "4,436,974",
+                "2016_votes": 1831825,
+                "2016_density": 40.7,
+                "2020_pop": 4499690,
+                "2020_votes": "2,098,570",
+                "2020_density": 46.6,
+                "winner": 0,
+                "electoral": 8
+            },
+            {
+                "state": "Louisiana",
+                "2016_pop": "4,681,666",
+                "2016_votes": 1958792,
+                "2016_density": 42.2,
+                "2020_pop": 4645180,
+                "2020_votes": "2,111,810",
+                "2020_density": 45.5,
+                "winner": 0,
+                "electoral": 6
+            },
+            {
+                "state": "Maine",
+                "2016_pop": "1,331,479",
+                "2016_votes": 693328,
+                "2016_density": 51.5,
+                "2020_pop": 1345790,
+                "2020_votes": "762,306",
+                "2020_density": 56.6,
+                "winner": 100,
+                "electoral": 4
+            },
+            {
+                "state": "Maryland",
+                "2016_pop": "6,016,447",
+                "2016_votes": 2621097,
+                "2016_density": 43.1,
+                "2020_pop": 6083120,
+                "2020_votes": "2,878,087",
+                "2020_density": 47.3,
+                "winner": 100,
+                "electoral": 10
+            },
+            {
+                "state": "Massachusetts",
+                "2016_pop": "6,811,779",
+                "2016_votes": 3086089,
+                "2016_density": 44.2,
+                "2020_pop": 6976600,
+                "2020_votes": "4,468,476",
+                "2020_density": 64.0,
+                "winner": 100,
+                "electoral": 11
+            },
+            {
+                "state": "Michigan",
+                "2016_pop": "9,928,300",
+                "2016_votes": 4548382,
+                "2016_density": 45.3,
+                "2020_pop": 10045000,
+                "2020_votes": "5,456,576",
+                "2020_density": 54.3,
+                "winner": 100,
+                "electoral": 16
+            },
+            {
+                "state": "Minnesota",
+                "2016_pop": "5,519,952",
+                "2016_votes": 2690667,
+                "2016_density": 47.2,
+                "2020_pop": 5700670,
+                "2020_votes": "3,200,062",
+                "2020_density": 56.1,
+                "winner": 100,
+                "electoral": 10
+            },
+            {
+                "state": "Mississippi",
+                "2016_pop": "2,988,726",
+                "2016_votes": 1185845,
+                "2016_density": 39.7,
+                "2020_pop": 2989260,
+                "2020_votes": "1,286,366",
+                "2020_density": 43.0,
+                "winner": 0,
+                "electoral": 6
+            },
+            {
+                "state": "Missouri",
+                "2016_pop": "6,093,000",
+                "2016_votes": 2665579,
+                "2016_density": 43.2,
+                "2020_pop": 6169270,
+                "2020_votes": "2,954,699",
+                "2020_density": 47.9,
+                "winner": 0,
+                "electoral": 10
+            },
+            {
+                "state": "Montana",
+                "2016_pop": "1,042,520",
+                "2016_votes": 456949,
+                "2016_density": 42.0,
+                "2020_pop": 1086760,
+                "2020_votes": "588,373",
+                "2020_density": 54.1,
+                "winner": 0,
+                "electoral": 3
+            },
+            {
+                "state": "Nebraska",
+                "2016_pop": "1,907,116",
+                "2016_votes": 780455,
+                "2016_density": 40.0,
+                "2020_pop": 1952570,
+                "2020_votes": "929,678",
+                "2020_density": 47.6,
+                "winner": 0,
+                "electoral": 5
+            },
+            {
+                "state": "Nevada",
+                "2016_pop": "2,940,058",
+                "2016_votes": 1051318,
+                "2016_density": 33.5,
+                "2020_pop": 3139660,
+                "2020_votes": "1,373,376",
+                "2020_density": 43.7,
+                "winner": 100,
+                "electoral": 6
+            },
+            {
+                "state": "New Hampshire",
+                "2016_pop": "1,334,795",
+                "2016_votes": 694316,
+                "2016_density": 50.6,
+                "2020_pop": 1371250,
+                "2020_votes": "790,597",
+                "2020_density": 57.7,
+                "winner": 100,
+                "electoral": 4
+            },
+            {
+                "state": "New Jersey",
+                "2016_pop": "8,944,469",
+                "2016_votes": 3750211,
+                "2016_density": 41.9,
+                "2020_pop": 8936570,
+                "2020_votes": "4,329,166",
+                "2020_density": 48.4,
+                "winner": 100,
+                "electoral": 14
+            },
+            {
+                "state": "New Mexico",
+                "2016_pop": "2,081,015",
+                "2016_votes": 704901,
+                "2016_density": 33.6,
+                "2020_pop": 2096640,
+                "2020_votes": "903,296",
+                "2020_density": 43.1,
+                "winner": 100,
+                "electoral": 5
+            },
+            {
+                "state": "New York",
+                "2016_pop": "19,450,289",
+                "2016_votes": 6841879,
+                "2016_density": 35.2,
+                "2020_pop": 19745500,
+                "2020_votes": "7375658",
+                "2020_density": 37.9,
+                "winner": 100,
+                "electoral": 29
+            },
+            {
+                "state": "North Carolina",
+                "2016_pop": "10,146,788",
+                "2016_votes": 4551947,
+                "2016_density": 42.9,
+                "2020_pop": 10611900,
+                "2020_votes": "5,443,077",
+                "2020_density": 51.3,
+                "winner": 0,
+                "electoral": 15
+            },
+            {
+                "state": "North Dakota",
+                "2016_pop": "757,952",
+                "2016_votes": 310552,
+                "2016_density": 40.7,
+                "2020_pop": 761723,
+                "2020_votes": "350,497",
+                "2020_density": 46.0,
+                "winner": 0,
+                "electoral": 3
+            },
+            {
+                "state": "Ohio",
+                "2016_pop": "11,614,373",
+                "2016_votes": 5235169,
+                "2016_density": 44.6,
+                "2020_pop": 11747700,
+                "2020_votes": "5,806,771",
+                "2020_density": 49.4,
+                "winner": 0,
+                "electoral": 18
+            },
+            {
+                "state": "Oklahoma",
+                "2016_pop": "3,923,561",
+                "2016_votes": 1369511,
+                "2016_density": 34.6,
+                "2020_pop": 3954820,
+                "2020_votes": "1,524,170",
+                "2020_density": 38.5,
+                "winner": 0,
+                "electoral": 7
+            },
+            {
+                "state": "Oregon",
+                "2016_pop": "4,093,465",
+                "2016_votes": 1784509,
+                "2016_density": 41.5,
+                "2020_pop": 4301090,
+                "2020_votes": "2,288,764",
+                "2020_density": 53.2,
+                "winner": 100,
+                "electoral": 7
+            },
+            {
+                "state": "Pennsylvania",
+                "2016_pop": "12,784,227",
+                "2016_votes": 5897174,
+                "2016_density": 46.0,
+                "2020_pop": 12820900,
+                "2020_votes": "6,818,974",
+                "2020_density": 53.2,
+                "winner": 100,
+                "electoral": 20
+            },
+            {
+                "state": "Rhode Island",
+                "2016_pop": "1,056,426",
+                "2016_votes": 433068,
+                "2016_density": 41.0,
+                "2020_pop": 1056160,
+                "2020_votes": "506,022",
+                "2020_density": 47.9,
+                "winner": 100,
+                "electoral": 4
+            },
+            {
+                "state": "South Carolina",
+                "2016_pop": "4,961,119",
+                "2016_votes": 2010762,
+                "2016_density": 38.6,
+                "2020_pop": 5210100,
+                "2020_votes": "2,476,644",
+                "2020_density": 47.5,
+                "winner": 0,
+                "electoral": 9
+            },
+            {
+                "state": "South Dakota",
+                "2016_pop": "865,454",
+                "2016_votes": 345179,
+                "2016_density": 38.2,
+                "2020_pop": 903027,
+                "2020_votes": "411,514",
+                "2020_density": 45.6,
+                "winner": 0,
+                "electoral": 3
+            },
+            {
+                "state": "Tennessee",
+                "2016_pop": "6,651,194",
+                "2016_votes": 2393620,
+                "2016_density": 34.7,
+                "2020_pop": 6897580,
+                "2020_votes": "2,989,196",
+                "2020_density": 43.3,
+                "winner": 0,
+                "electoral": 11
+            },
+            {
+                "state": "Texas",
+                "2016_pop": "27,862,596",
+                "2016_votes": 8562915,
+                "2016_density": 29.1,
+                "2020_pop": 29472300,
+                "2020_votes": "11,108,301",
+                "2020_density": 37.7,
+                "winner": 0,
+                "electoral": 38
+            },
+            {
+                "state": "Utah",
+                "2016_pop": "3,051,217",
+                "2016_votes": 825907,
+                "2016_density": 25.2,
+                "2020_pop": 3282120,
+                "2020_votes": "1,125,367",
+                "2020_density": 34.3,
+                "winner": 0,
+                "electoral": 6
+            },
+            {
+                "state": "Vermont",
+                "2016_pop": "624,594",
+                "2016_votes": 273942,
+                "2016_density": 43.6,
+                "2020_pop": 628061,
+                "2020_votes": "355,524",
+                "2020_density": 56.6,
+                "winner": 100,
+                "electoral": 3
+            },
+            {
+                "state": "Virginia",
+                "2016_pop": "8,411,808",
+                "2016_votes": 3750916,
+                "2016_density": 43.5,
+                "2020_pop": 8626210,
+                "2020_votes": "4,376,544",
+                "2020_density": 50.7,
+                "winner": 100,
+                "electoral": 13
+            },
+            {
+                "state": "Washington",
+                "2016_pop": "7,288,000",
+                "2016_votes": 2964465,
+                "2016_density": 38.0200972,
+                "2020_pop": 7797100,
+                "2020_votes": "3,941,767",
+                "2020_density": 50.6,
+                "winner": 100,
+                "electoral": 10
+            },
+            {
+                "state": "West Virginia",
+                "2016_pop": "1,831,102",
+                "2016_votes": 678165,
+                "2016_density": 38.1,
+                "2020_pop": 1778070,
+                "2020_votes": "780,898",
+                "2020_density": 43.9,
+                "winner": 0,
+                "electoral": 5
+            },
+            {
+                "state": "Wisconsin",
+                "2016_pop": "5,778,708",
+                "2016_votes": 2787820,
+                "2016_density": 47.6,
+                "2020_pop": 5851750,
+                "2020_votes": "3,240,867",
+                "2020_density": 55.4,
+                "winner": 100,
+                "electoral": 10
+            },
+            {
+                "state": "Wyoming",
+                "2016_pop": "585,501",
+                "2016_votes": 230392,
+                "2016_density": 40.6,
+                "2020_pop": 567025,
+                "2020_votes": "267,050",
+                "2020_density": 47.1,
+                "winner": 0,
+                "electoral": 3
+            }
+        ]
+    },
+    "params": [
+    {
+        "name": "electoral_Above", "value": 0,
+        "bind": {
+            "input": "range",
+            "min": 0,
+            "max": 50,
+            "step": 3,
+            "name": "Minimum electoral vote: "
+        }
+    }
+],
+"transform": [
+    {"filter": "datum.electoral > electoral_Above"}
+],
+    "mark": "circle",
+    "encoding": {
+        "x": {
+            "field": "2020_density",
+            "title": "2020 voter",
+            "type": "quantitative",
+            "scale": {
+                "zero": false
+            }
+        },
+        "y": {
+            "field": "2016_density",
+            "type": "quantitative",
+            "title": "2016 voter turnout",
+            "scale": {
+                "zero": false
+            }
+        },
+        "color": {
+            "field": "winner",
+            "legend": null,
+            "type": "quantitative",
+            "scale": {
+                "type": "linear",
+                "scheme": "redblue"
+            }
+        },
+        "size": {
+            "field": "electoral",
+            "type": "quantitative"
+        },
+        "tooltip": [
+            {
+                "field": "state",
+                "title": "State"
+            },
+            {
+                "field": "2016_density",
+                "title": "2016 turnout"
+            },
+            {
+                "field": "2020_density",
+                "title": "2020 turnout"
+            },
+            {
+                "field": "electoral",
+                "title": "Electoral"
+            }
+        ]
+    },
+        "config": {
+            "legend": {
+                "orient": "bottom"
+            }
+        }
+}
+
+
+
+

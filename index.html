@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Homework 4 - Sina Amini </title>
+    <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+    <!-- Import vega-embed -->
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <!-- Import pure.css -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+        integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom style -->
+    <style>
+        * {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        h1 {
+            font-weight: 750;
+            text-align: center;
+            font-size: 40px;
+            font-family: Helvetica;
+        }
+
+        h2 {
+            font-weight: 500;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        h3 {
+            font-weight: 300;
+            text-align: left;
+            font-size: 20px;
+        }
+
+        t1 {
+            text-align: center;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .page {
+            width: 1050px;
+            background-color: #ffffff;
+            margin: auto;
+            padding: 30px;
+            padding-top: 35px;
+        }
+
+        .vis-container {
+            width: 100%;
+        }
+
+        .description h2 {
+            /* border: 1px outset black; */
+            /* background-color: lightblue; */
+            margin-top: 0px;
+        }
+
+        .description-right {
+            padding-left: 20px;
+            text-align: center;
+
+
+        }
+
+        .description-left {
+            padding-right: 20px;
+            text-align: center;
+
+        }
+
+        .pure-g {
+            margin-bottom: 25px;
+        }
+
+        .small-font {
+            font-weight: 200;
+            text-align: center;
+            font-size: 15px;
+            font-family: Helvetica;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        p1 {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+
+        <!-- pure grid group -->
+        <div class="pure-g">
+            <div class="pure-u-1-1">
+                <h1>US Presidential Election Map 2020</h1>
+            </div>
+        </div>
+
+        <!-- end pure grid group -->
+
+                <!-- pure grid group -->
+                <div class="pure-g">
+                    <div class="pure-u-1-1">
+                        <div id="vis01" class="vis-container"></div>
+                    </div>
+                    <div class="pure-u-1-5">
+                        <h2> </h2>
+                    </div>
+                </div>
+                <!-- end pure grid group -->
+
+                 <!-- pure grid group -->
+                 <div class="pure-g">
+                    <div class="pure-u-1-1">
+                        <h2><b>Voter Turnout: 2016 vs. 2020</b></h2>
+                        <div id="vis02" class="vis-container"></div>
+                    </div>
+                </div>
+                <!-- end pure grid group -->
+                
+                <!-- end pure grid group -->
+
+                
+                <div class="pure-g">
+                    <div class="pure-u-1-1 small-font">
+                        <p1>The visualisation is made by <a href="https://github.com/sami0007-student"
+                                target="_blank">Sina Amini</a>. The data has been retrieved from NBC News and can be found <a
+                                href="https://github.com/sami0007-student/DataViz2/tree/main/Data" target="_blank"> here</href></a>. November 2020 </p1>
+                    </div>
+                </div>
+
+
+
+            <script type="text/javascript">
+                
+                var specVis01 = "2020ElectionMap.json";
+                var specVis02 = "scatterPlot.json";
+                
+                
+                vegaEmbed('#vis01', specVis01, { "actions": false }).then(function (result) {
+                    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                }).catch(console.error);
+
+                vegaEmbed('#vis02', specVis02, { "actions": false }).then(function (result) {
+                    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                }).catch(console.error);
+            
+            </script>
+</body>
+
+</html>

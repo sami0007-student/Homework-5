@@ -1,0 +1,590 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "title": {
+        "text": "2020 USA election results",
+        "fontSize": 24},
+    "width": "container",
+    "height": 300,
+    "data": {
+        "url": "https://raw.githubusercontent.com/lobakk/FIT3179/main/vegalite/usa.topojson",
+        "format": {
+            "type": "topojson",
+            "feature": "states"
+        }
+    },
+    "transform": [
+        {
+            "lookup": "properties.name",
+            "from": {
+                "data": {
+                    "values": [
+                        {
+                            "state": "Alabama",
+                            "abb": "AL",
+                            "winner": 0,
+                            "percD": 36.5,
+                            "votesDem": "843,473",
+                            "percR": 62.1,
+                            "votesRep": "1,434,159",
+                            "pop": 4908620
+                        },
+                        {
+                            "state": "Alaska",
+                            "abb": "AK",
+                            "winner": 0,
+                            "percD": 43,
+                            "votesDem": "150,262",
+                            "percR": 53.2,
+                            "votesRep": "185,769",
+                            "pop": 734002
+                        },
+                        {
+                            "state": "Arizona",
+                            "abb": "AZ",
+                            "winner": 100,
+                            "percD": 49.4,
+                            "votesDem": "1,672,143",
+                            "percR": 49.1,
+                            "votesRep": "1,661,686",
+                            "pop": 7378490
+                        },
+                        {
+                            "state": "Arkansas",
+                            "abb": "AR",
+                            "winner": 0,
+                            "percD": 34.8,
+                            "votesDem": "423,311",
+                            "percR": 62.4,
+                            "votesRep": "759,625",
+                            "pop": 3039000
+                        },
+                        {
+                            "state": "California",
+                            "abb": "CA",
+                            "winner": 100,
+                            "percD": 63.6,
+                            "votesDem": "10,950,161",
+                            "percR": 34.2,
+                            "votesRep": "5,883,885",
+                            "pop": 39937500
+                        },
+                        {
+                            "state": "Colorado",
+                            "abb": "CO",
+                            "winner": 100,
+                            "percD": 55.4,
+                            "votesDem": "1,803,921",
+                            "percR": 41.9,
+                            "votesRep": "1,364,202",
+                            "pop": 5845530
+                        },
+                        {
+                            "state": "Connecticut",
+                            "abb": "CT",
+                            "winner": 100,
+                            "percD": 59.2,
+                            "votesDem": "1,080,387",
+                            "percR": 39.2,
+                            "votesRep": "714,973",
+                            "pop": 3563080
+                        },
+                        {
+                            "state": "Delaware",
+                            "abb": "DE",
+                            "winner": 100,
+                            "percD": 58.8,
+                            "votesDem": "296,268",
+                            "percR": 39.8,
+                            "votesRep": "200,603",
+                            "pop": 982895
+                        },
+                        {
+                            "state": "District of Columbia",
+                            "abb": "DC",
+                            "winner": 100,
+                            "percD": 92.1,
+                            "votesDem": "307,265",
+                            "percR": 5.4,
+                            "votesRep": "18,172",
+                            "pop": 720687
+                        },
+                        {
+                            "state": "Florida",
+                            "abb": "FL",
+                            "winner": 0,
+                            "percD": 47.9,
+                            "votesDem": "5,297,045",
+                            "percR": 51.2,
+                            "votesRep": "5,668,731",
+                            "pop": 21993000
+                        },
+                        {
+                            "state": "Georgia",
+                            "abb": "GA",
+                            "winner": 100,
+                            "percD": 49.5,
+                            "votesDem": "2,472,434",
+                            "percR": 49.2,
+                            "votesRep": "2,458,378",
+                            "pop": 10736100
+                        },
+                        {
+                            "state": "Hawaii",
+                            "abb": "HI",
+                            "winner": 100,
+                            "percD": 63.7,
+                            "votesDem": "366,070",
+                            "percR": 35.3,
+                            "votesRep": "196,800",
+                            "pop": 1412690
+                        },
+                        {
+                            "state": "Idaho",
+                            "abb": "ID",
+                            "winner": 0,
+                            "percD": 33.1,
+                            "votesDem": "287,031",
+                            "percR": 63.8,
+                            "votesRep": "554,128",
+                            "pop": 1826160
+                        },
+                        {
+                            "state": "Illinois",
+                            "abb": "IL",
+                            "winner": 100,
+                            "percD": 57.3,
+                            "votesDem": "3,409,814",
+                            "percR": 40.7,
+                            "votesRep": "2,421,715",
+                            "pop": 12659700
+                        },
+                        {
+                            "state": "Indiana",
+                            "abb": "IN",
+                            "winner": 0,
+                            "percD": 40.9,
+                            "votesDem": "1,241,774",
+                            "percR": 57,
+                            "votesRep": "1,729,446",
+                            "pop": 6745350
+                        },
+                        {
+                            "state": "Iowa",
+                            "abb": "IA",
+                            "winner": 0,
+                            "percD": 44.9,
+                            "votesDem": "758,881",
+                            "percR": 53.2,
+                            "votesRep": "897,467",
+                            "pop": 3179850
+                        },
+                        {
+                            "state": "Kansas",
+                            "abb": "KS",
+                            "winner": 0,
+                            "percD": 41.3,
+                            "votesDem": "551,199",
+                            "percR": 56.5,
+                            "votesRep": "753,370",
+                            "pop": 2910360
+                        },
+                        {
+                            "state": "Kentucky",
+                            "abb": "KY",
+                            "winner": 0,
+                            "percD": 36.2,
+                            "votesDem": "772,223",
+                            "percR": 62.1,
+                            "votesRep": "1,326,347",
+                            "pop": 4499690
+                        },
+                        {
+                            "state": "Louisiana",
+                            "abb": "LA",
+                            "winner": 0,
+                            "percD": 39.1,
+                            "votesDem": "856,034",
+                            "percR": 58.5,
+                            "votesRep": "1,255,776",
+                            "pop": 4645180
+                        },
+                        {
+                            "state": "Maine",
+                            "abb": "ME",
+                            "winner": 100,
+                            "percD": 53.5,
+                            "votesDem": "420,357",
+                            "percR": 43.5,
+                            "votesRep": "341,949",
+                            "pop": 1345790
+                        },
+                        {
+                            "state": "Maryland",
+                            "abb": "MD",
+                            "winner": 100,
+                            "percD": 65.3,
+                            "votesDem": "1,917,406",
+                            "percR": 32.7,
+                            "votesRep": "960,681",
+                            "pop": 6083120
+                        },
+                        {
+                            "state": "Massachusetts",
+                            "abb": "MA",
+                            "winner": 100,
+                            "percD": 65.3,
+                            "votesDem": "3,319,174",
+                            "percR": 32.4,
+                            "votesRep": "1,149,302",
+                            "pop": 6976600
+                        },
+                        {
+                            "state": "Michigan",
+                            "abb": "MI",
+                            "winner": 100,
+                            "percD": 50.6,
+                            "votesDem": "2,807,039",
+                            "percR": 47.8,
+                            "votesRep": "2,649,537",
+                            "pop": 10045000
+                        },
+                        {
+                            "state": "Minnesota",
+                            "abb": "MN",
+                            "winner": 100,
+                            "percD": 52.5,
+                            "votesDem": "1,716,312",
+                            "percR": 45.4,
+                            "votesRep": "1,483,750",
+                            "pop": 5700670
+                        },
+                        {
+                            "state": "Mississippi",
+                            "abb": "MS",
+                            "winner": 0,
+                            "percD": 40.8,
+                            "votesDem": "532,414",
+                            "percR": 57.7,
+                            "votesRep": "753,952",
+                            "pop": 2989260
+                        },
+                        {
+                            "state": "Missouri",
+                            "abb": "MO",
+                            "winner": 0,
+                            "percD": 41.3,
+                            "votesDem": "1,242,851",
+                            "percR": 56.9,
+                            "votesRep": "1,711,848",
+                            "pop": 6169270
+                        },
+                        {
+                            "state": "Montana",
+                            "abb": "MT",
+                            "winner": 0,
+                            "percD": 40.4,
+                            "votesDem": "244,783",
+                            "percR": 56.7,
+                            "votesRep": "343,590",
+                            "pop": 1086760
+                        },
+                        {
+                            "state": "Nebraska",
+                            "abb": "NE",
+                            "winner": 0,
+                            "percD": 39.4,
+                            "votesDem": "374,169",
+                            "percR": 58.5,
+                            "votesRep": "555,509",
+                            "pop": 1952570
+                        },
+                        {
+                            "state": "Nevada",
+                            "abb": "NV",
+                            "winner": 100,
+                            "percD": 50.1,
+                            "votesDem": "703,486",
+                            "percR": 47.7,
+                            "votesRep": "669,890",
+                            "pop": 3139660
+                        },
+                        {
+                            "state": "New Hampshire",
+                            "abb": "NH",
+                            "winner": 100,
+                            "percD": 52.8,
+                            "votesDem": "424,937",
+                            "percR": 45.5,
+                            "votesRep": "365,660",
+                            "pop": 1371250
+                        },
+                        {
+                            "state": "New Jersey",
+                            "abb": "NJ",
+                            "winner": 100,
+                            "percD": 57.1,
+                            "votesDem": "2,511,560",
+                            "percR": 41.3,
+                            "votesRep": "1,817,606",
+                            "pop": 8936570
+                        },
+                        {
+                            "state": "New Mexico",
+                            "abb": "NM",
+                            "winner": 100,
+                            "percD": 54.3,
+                            "votesDem": "501,471",
+                            "percR": 43.5,
+                            "votesRep": "401,825",
+                            "pop": 2096640
+                        },
+                        {
+                            "state": "New York",
+                            "abb": "NY",
+                            "winner": 100,
+                            "percD": 56.4,
+                            "votesDem": "3,919,335",
+                            "percR": 42.1,
+                            "votesRep": "2,922,544",
+                            "pop": 19440500
+                        },
+                        {
+                            "state": "North Carolina",
+                            "abb": "NC",
+                            "winner": 0,
+                            "percD": 48.6,
+                            "votesDem": "2,684,302",
+                            "percR": 49.9,
+                            "votesRep": "2,758,775",
+                            "pop": 10611900
+                        },
+                        {
+                            "state": "North Dakota",
+                            "abb": "ND",
+                            "winner": 0,
+                            "percD": 31.8,
+                            "votesDem": "114,902",
+                            "percR": 65.1,
+                            "votesRep": "235,595",
+                            "pop": 761723
+                        },
+                        {
+                            "state": "Ohio",
+                            "abb": "OH",
+                            "winner": 0,
+                            "percD": 45.2,
+                            "votesDem": "2,670,277",
+                            "percR": 53.1,
+                            "votesRep": "3,136,494",
+                            "pop": 11747700
+                        },
+                        {
+                            "state": "Oklahoma",
+                            "abb": "OK",
+                            "winner": 0,
+                            "percD": 32.3,
+                            "votesDem": "503,890",
+                            "percR": 65.4,
+                            "votesRep": "1,020,280",
+                            "pop": 3954820
+                        },
+                        {
+                            "state": "Oregon",
+                            "abb": "OR",
+                            "winner": 100,
+                            "percD": 56.5,
+                            "votesDem": "1,335,028",
+                            "percR": 40.4,
+                            "votesRep": "953,736",
+                            "pop": 4301090
+                        },
+                        {
+                            "state": "Pennsylvania",
+                            "abb": "PA",
+                            "winner": 100,
+                            "percD": 50,
+                            "votesDem": "3,450,696",
+                            "percR": 48.8,
+                            "votesRep": "3,368,278",
+                            "pop": 12820900
+                        },
+                        {
+                            "state": "Rhode Island",
+                            "abb": "RI",
+                            "winner": 100,
+                            "percD": 59.6,
+                            "votesDem": "306,192",
+                            "percR": 38.9,
+                            "votesRep": "199,830",
+                            "pop": 1056160
+                        },
+                        {
+                            "state": "South Carolina",
+                            "abb": "SC",
+                            "winner": 0,
+                            "percD": 43.4,
+                            "votesDem": "1,091,541",
+                            "percR": 55.1,
+                            "votesRep": "1,385,103",
+                            "pop": 5210100
+                        },
+                        {
+                            "state": "South Dakota",
+                            "abb": "SD",
+                            "winner": 0,
+                            "percD": 35.6,
+                            "votesDem": "150,471",
+                            "percR": 61.8,
+                            "votesRep": "261,043",
+                            "pop": 903027
+                        },
+                        {
+                            "state": "Tennessee",
+                            "abb": "TN",
+                            "winner": 0,
+                            "percD": 37.4,
+                            "votesDem": "1,139,376",
+                            "percR": 60.7,
+                            "votesRep": "1,849,820",
+                            "pop": 6897580
+                        },
+                        {
+                            "state": "Texas",
+                            "abb": "TX",
+                            "winner": 0,
+                            "percD": 46.4,
+                            "votesDem": "5,235,216",
+                            "percR": 52.1,
+                            "votesRep": "5,873,085",
+                            "pop": 29472300
+                        },
+                        {
+                            "state": "Utah",
+                            "abb": "UT",
+                            "winner": 0,
+                            "percD": 37.7,
+                            "votesDem": "560,267",
+                            "percR": 58.2,
+                            "votesRep": "565,100",
+                            "pop": 3282120
+                        },
+                        {
+                            "state": "Vermont",
+                            "abb": "VT",
+                            "winner": 100,
+                            "percD": 66.1,
+                            "votesDem": "242,820",
+                            "percR": 30.7,
+                            "votesRep": "112,704",
+                            "pop": 628061
+                        },
+                        {
+                            "state": "Virginia",
+                            "abb": "VA",
+                            "winner": 100,
+                            "percD": 54.2,
+                            "votesDem": "2,413,973",
+                            "percR": 44,
+                            "votesRep": "1,962,571",
+                            "pop": 8626210
+                        },
+                        {
+                            "state": "Washington",
+                            "abb": "WA",
+                            "winner": 100,
+                            "percD": 58.4,
+                            "votesDem": "2,363,062",
+                            "percR": 39,
+                            "votesRep": "1,578,705",
+                            "pop": 7797100
+                        },
+                        {
+                            "state": "West Virginia",
+                            "abb": "WV",
+                            "winner": 0,
+                            "percD": 29.7,
+                            "votesDem": "235,847",
+                            "percR": 68.6,
+                            "votesRep": "545,051",
+                            "pop": 1778070
+                        },
+                        {
+                            "state": "Wisconsin",
+                            "abb": "WI",
+                            "winner": 100,
+                            "percD": 59.5,
+                            "votesDem": "1,630,716",
+                            "percR": 48.8,
+                            "votesRep": "1,610,151",
+                            "pop": 5851750
+                        },
+                        {
+                            "state": "Wyoming",
+                            "abb": "WY",
+                            "winner": 0,
+                            "percD": 26.6,
+                            "votesDem": "73,491",
+                            "percR": 69.9,
+                            "votesRep": "193,559",
+                            "pop": 567025
+                        }
+                    ]
+                },
+                "key": "abb",
+                "fields": [
+                    "state",
+                    "votesDem",
+                    "percD",
+                    "votesRep",
+                    "percR",
+                    "electoralDem",
+                    "electoralRep",
+                    "pop",
+                    "winner"
+                ]
+            }
+        }
+    ],
+    "projection": {
+        "type": "albersUsa"
+    },
+    "mark": {
+        "type": "geoshape", "stroke": "black"
+    },
+    "config": {},
+    "encoding": {
+        "color": {
+            "field": "winner",
+            "type": "quantitative",
+            "scale": {
+                "type": "linear",
+                "scheme": "redblue"
+            },
+            "legend": {
+                "disable": true
+            }
+        },
+        "tooltip": [
+            {
+                "field": "state",
+                "title": "State"
+            },
+            {
+                "field": "percD",
+                "title": "Biden"
+            },
+            {
+                "field": "percR",
+                "title": "Trump"
+            },
+            {
+                "field": "votesDem",
+                "title": "D votes"
+            },
+            {
+                "field": "votesRep",
+                "title": "R votes"
+            }
+        ]
+    }
+}
